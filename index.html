@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop morosos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Stop morosos</h1>
+
+        <!-- Formulario para añadir productos -->
+        <form id="productForm">
+            <input type="text" id="productName" placeholder="Nombre del producto" required>
+            <input type="number" id="productPrice" placeholder="Precio (€)" step="0.01" min="0.01" required>
+            <button type="submit">Añadir</button>
+        </form>
+
+        <!-- Tabla donde aparecerán los productos -->
+        <p class="info">Pulsa en una celda para editarla</p>
+        <div class="table-box">
+            <div class="table-scroll">
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Producto</th>
+                            <th class="price-column">Precio (€)</th>
+                            <th class="delete-column"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- filas aquí -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Footer fijo dentro de la caja -->
+            <div class="table-footer">
+                <div></div>
+                <div class="total-label">Total</div>
+                <div id="totalCell" class="total-value">0,00 €</div>
+                <div></div>
+            </div>
+        </div>
+        <!-- Paso: ¿Entre cuántas personas se reparte? -->
+        <div class="split-controls">
+            <label for="peopleCount" class="split-label">¿Cuantas personas?</label>
+            <select id="peopleCount" aria-label="Número de personas"></select>
+            <button id="nextBtn" type="button">Siguiente</button>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
