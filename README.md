@@ -1,4 +1,4 @@
-# Dividir 💸
+# Dividir
 
 Aplicación web para **dividir gastos** de forma justa entre varias personas. Calcula cuánto debe pagar cada persona teniendo en cuenta qué productos comparte cada una, evitando errores de redondeo típicos.
 
