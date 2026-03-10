@@ -232,7 +232,7 @@ function renderStep2(app = App) {
       <button id="backToInitial" class="back-btn" type="button" aria-label="Volver al inicio">← Volver</button>
     </div>
 
-    <h1>Stop morosos</h1>
+    <h1>Dividir</h1>
     <p class="info">Marca/desmarca qué productos paga cada persona.</p>
     <section class="people-grid">${peopleCards}</section>
 
